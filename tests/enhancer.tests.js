@@ -58,6 +58,13 @@ describe('enhancer', () => {
       });
     });
 
+    it('returns action results', () => {
+      const store = createEnhancedStore(testReducer),
+            result = store.dispatch(action('1'));
+
+      expect(result).to.eql(action('1'));
+    });
+
     it('buffers batched actions.', () => {
       const reducer = chai.spy(testReducer),
             subscriber = chai.spy(),
