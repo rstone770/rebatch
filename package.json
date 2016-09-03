@@ -1,0 +1,53 @@
+{
+  "name": "@rstone770/rebatch",
+  "version": "0.0.1",
+  "description": "Redux batched actions.",
+  "main": "dist/rebatch.js",
+  "scripts": {
+    "test": "node node_modules/gulp/bin/gulp test",
+    "bundle": "node node_modules/gulp/bin/gulp bundle",
+    "prepublish": "npm run bundle"
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rstone770/rebatch"
+  },
+  "author": "Brenden Snyder <rstone770@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rstone770/rebatch/issues"
+  },
+  "keywords": [
+    "redux",
+    "middleware",
+    "reducer",
+    "action",
+    "state",
+    "enhancer",
+    "batch",
+    "batched"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "eslint": "^3.4.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "redux": "^3.5.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
