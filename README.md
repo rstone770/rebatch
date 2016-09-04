@@ -3,6 +3,8 @@ Rebatch
 
 Add batching [middleware](http://redux.js.org/docs/Glossary.html#middleware), [enhancer](http://redux.js.org/docs/Glossary.html#store-enhancer), and [action creator](http://redux.js.org/docs/Glossary.html##action-creator)
 
+[![Build Status](https://travis-ci.org/rstone770/rebatch.svg?branch=master)](https://travis-ci.org/rstone770/rebatch)
+
 ```js
 npm install ---save @rstone770/rebatch
 ```
