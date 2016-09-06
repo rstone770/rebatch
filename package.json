@@ -39,6 +39,7 @@
     "babel-register": "^6.14.0",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
+    "browserify-derequire": "^0.9.4",
     "chai": "^3.5.0",
     "chai-spies": "^0.7.1",
     "eslint": "^3.4.0",

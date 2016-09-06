@@ -1,6 +1,7 @@
 const browserify = require('browserify'),
       babelify = require('babelify'),
       buffer = require('vinyl-buffer'),
+      deqequire = require('browserify-derequire'),
       rename = require('gulp-rename'),
       source = require('vinyl-source-stream'),
       uglify = require('gulp-uglify');
@@ -49,6 +50,7 @@ const MAIN_ENTRY_NAME = './src/index.js';
  */
 const bundle = (entry, name) => {
   return browserify(entry, { standalone: name })
+    .plugin(deqequire)
     .transform(babelify)
     .bundle();
 };
