@@ -1,6 +1,6 @@
 {
   "name": "@rstone770/rebatch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Redux batched actions.",
   "main": "dist/rebatch.js",
   "scripts": {

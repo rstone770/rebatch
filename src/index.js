@@ -1,9 +1,11 @@
+import { batch } from './actions';
 import enhancer from './enhancer';
 import middleware from './middleware';
-import { batch } from './actions';
+import spread from './spread';
 
 export {
+  batch,
   enhancer,
   middleware,
-  batch
+  spread
 };
