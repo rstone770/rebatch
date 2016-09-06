@@ -132,6 +132,28 @@ const [
 promise.then(() => console.log('promise!!!11!'));
 ```
 
+### spread([results], resultsFunction)
+
+Nothing exciting here, takes results of a batch dispatch and spreads them over a results function.
+
+Returns the result of the resultsFunction.
+
+```js
+import { batch, spread } from '@rstone/rebatch';
+
+const startLoading = () => ({ type: 'set_loading', payload: true }),
+      endLoading = () => ({ type: 'set_loading', payload: false });
+
+const handleBatchResults = (loading, request) => request.then(() => store.dispatch(endLoading()));
+
+const batchActions = batch([
+    setLoading(),
+    () => fetch('/') // redux-thunk
+]);
+
+const result = spread(batchActions, handleBatchResults);
+```
+
 ## License
 
 MIT
