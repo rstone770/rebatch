@@ -12,9 +12,9 @@ npm install ---save @rstone770/rebatch
 
 ## Why?
 
-Sometimes you might need to group several actions in a single dispatch. This might be done to improve performance in react if your are dispatching several actions at a time that might cause several store notifications. This might also be used to improve semantics were an action might be composed of many smaller actions, but should be dispatched as one.
+Sometimes you might need to group several actions in a single dispatch. This might be done to improve performance in react if you are dispatching several actions at a time that might cause several store notifications. This might also be used to improve semantics were an action might be composed of many smaller actions, but should be dispatched as one.
 
-__Special care should be taken to insure that batched actions do not rely on store side effects of the previous actions in the batch.__
+__Special care should be taken to ensure that batched actions do not rely on store side effects of the previous actions in the batch.__
 
 Below is an example of incorrect usage.
 
