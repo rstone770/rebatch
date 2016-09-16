@@ -7,7 +7,7 @@ Add batching [middleware](http://redux.js.org/docs/Glossary.html#middleware), [e
 [![npm (scoped)](https://img.shields.io/npm/v/@rstone770/rebatch.svg?maxAge=2592000)](https://www.npmjs.com/package/@rstone770/rebatch)
 
 ```js
-npm install ---save @rstone770/rebatch
+npm install --save @rstone770/rebatch
 ```
 
 ## Why?

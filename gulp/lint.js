@@ -1,4 +1,4 @@
-const lint = require('gulp-eslint');
+import lint from 'gulp-eslint';
 
 /**
  * Linting paths.
@@ -16,7 +16,7 @@ const SOURCES = [
  *
  * @param {gulp} gulp
  */
-module.exports = (gulp) => {
+export default (gulp) => {
   gulp.task('lint', () => {
     return gulp.src(SOURCES)
       .pipe(lint({}))

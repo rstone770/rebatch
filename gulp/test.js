@@ -1,4 +1,4 @@
-const mocha = require('gulp-mocha');
+import mocha from 'gulp-mocha';
 
 /**
  * Pattern to match testing files.
@@ -32,7 +32,7 @@ const handleGulpError = (error) => {
  *
  * @param {gulp} gulp
  */
-module.exports = (gulp) => {
+export default (gulp) => {
   gulp.task('test', () => {
     return gulp.src(TEST_MATCH)
       .pipe(mocha(MOCHA_CONFIG))

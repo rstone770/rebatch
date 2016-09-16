@@ -1,10 +1,9 @@
-const browserify = require('browserify'),
-      babelify = require('babelify'),
-      buffer = require('vinyl-buffer'),
-      deqequire = require('browserify-derequire'),
-      rename = require('gulp-rename'),
-      source = require('vinyl-source-stream'),
-      uglify = require('gulp-uglify');
+import browserify from 'browserify';
+import babelify from 'babelify';
+import buffer from 'vinyl-buffer';
+import rename from 'gulp-rename';
+import source from 'vinyl-source-stream';
+import uglify from 'gulp-uglify';
 
 /**
  * UMD module name.
@@ -60,7 +59,7 @@ const bundle = (entry, name) => {
  *
  * @param {gulp} gulp
  */
-module.exports = (gulp) => {
+export default (gulp) => {
   const write = () => gulp.dest(BUNDLE_PATH);
 
   gulp.task('bundle', () => {
